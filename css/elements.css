@@ -522,8 +522,8 @@ header .row { align-items: center; display: flex; height: auto;}
     Subscribe
 ====================================== */
 
-.subscribe-style1 input { margin: 0 0 0 0px; padding: 8px 45px 9px 20px !important; width: 430px; border-color: #fff;}
-.subscribe-style1 input:focus, .subscribe-style1 select:focus { border-color: #fff;}
+.subscribe-style1 input { margin: 0 0 0 0px; padding: 8px 45px 9px 20px !important; width: 430px; border-color: transparent;}
+.subscribe-style1 input:focus, .subscribe-style1 select:focus { border-color: transparent;}
 .subscribe-style1 a { height: auto; line-height: normal !important; position: absolute; right: 15px; top: 5px; vertical-align: top;}
 .subscribe-style1 a .fa { line-height: normal !important; }
 .subscribe-style1 a:hover { opacity: 0.8;}
