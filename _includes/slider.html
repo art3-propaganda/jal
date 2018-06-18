@@ -1,0 +1,31 @@
+<div id="slider-section1">                
+    <section id="home1" class="no-padding slider-style1 border-none">
+        <style>
+                .owl-carousel .owl-wrapper-outer{
+                    max-height: 500px;
+                }
+        </style>
+        <div class="owl-slider-full owl-carousel light-pagination">
+            <!-- slider item -->
+            {% for post in site.categories.Slide limit:3 %}
+                <a href="{{ post.link }}">
+                    <div class="item owl-bg-img tz-builder-bg-image cover-background" id="tz-bg-1" data-img-size="(W)1920px X (H)500px" style="background: url('{{ post.featured_image }}')">
+                        <div class="container one-sixth-screen xs-one-second-screen position-relative">
+                            <div class="col-md-12 col-sm-12 col-xs-12 slider-typography text-left sm-position-inherit">
+                                <div class="slider-text-middle-main">
+                                    <div class="slider-text-top"> 
+                                        <div class="col-md-7 col-sm-10 col-xs-12 no-padding alt-font slider-content sm-no-margin-top">
+                                            <div class="title-extra-large-6 line-height-75 font-weight-600 text-light-green slider-title margin-seven-bottom tz-text" id="tz-slider-text1"><br></div>
+                                            <div class="text-light-gray text-extra-large text-white main-font font-weight-500 slider-text margin-ten-bottom tz-text width-80 xs-width-100" id="tz-slider-text2"><br></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            {% endfor %}
+            <!-- end slider item -->                        
+        </div>
+    </section>                
+</div>

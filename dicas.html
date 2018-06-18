@@ -1,0 +1,78 @@
+---
+title: Dicas da Jal
+---
+
+<section class="bg-gray builder-bg border-none" id="content-section6">
+    <div class="container-fluid">
+        <div class="row equalize">                
+            {% for post in site.categories.Blog limit:1 %}
+                <div class="col-lg-5 col-md-6 col-sm-6 col-xs-12 display-table" style="">
+                    <div class="content-text xs-padding-twenty-nine text-center padding-twenty-nine md-padding-sixteen display-table-cell-vertical-middle">
+                            <!-- image 
+                            <div class="margin-seven-bottom xs-margin-twelve-bottom"><img src="images/restaurant-about-icon.png" data-img-size="(W)91px X (H)98px" alt=""></div>-->
+                            <!-- end image -->
+                            <!-- section title -->
+                            <div class="font-weight-400 text-dark-gray text-extra-large sm-text-extra-large margin-four-bottom xs-margin-ten-bottom display-block tz-text"></div>
+                            <h2 class="text-dark-gray alt-font font-weight-600 title-extra-large-2 md-title-extra-large sm-title-extra-large xs-title-extra-large margin-eight-bottom xs-margin-ten-bottom tz-text">{{ post.title }}</h2>
+                            <div class="text-medium sm-text-medium tz-text margin-eleven-bottom width-80 md-width-100 center-col sm-margin-eleven-bottom xs-margin-twenty-bottom xs-width-100"><p>
+                                {{ post.excerpt }}
+                            </p></div>
+                            <a class="btn-medium btn-circle btn bg-light-red text-white" href="{{ post.url }}"><span class="tz-text">Leia +</span><i class="fa fa-long-arrow-right icon-extra-small tz-icon-color"></i></a>
+                            <!-- end section title -->
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-6 col-sm-6 col-xs-12 no-padding content-img cover-background tz-builder-bg-image" data-img-size="(W)1200px X (H)750px" style="background: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.01)), url('{{ post.featured_image }}');">
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<section class="padding-110px-tb xs-padding-60px-tb blog-style1 bg-white builder-bg" id="blog-section1">
+    <div class="container">
+        <!-- section title -->
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                <h2 class="section-title-large sm-section-title-medium xs-section-title-large text-dark-gray font-weight-600 alt-font margin-three-bottom xs-margin-fifteen-bottom tz-text">Dicas da JAL</h2>
+                <div class="text-medium width-60 margin-lr-auto md-width-70 sm-width-100 tz-text margin-thirteen-bottom  xs-margin-nineteen-bottom"><!--Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.--></div>
+            </div>
+        </div>
+        <!-- end section title -->
+        <div class="row">
+            {% for post in site.categories.Blog limit:9 %}
+                <!-- blog item -->
+                <div class="col-md-4 col-sm-4 col-xs-12 xs-margin-nineteen-bottom">
+                    <div class="blog-post">
+                        <!-- blog image -->
+                        <div class="blog-image">
+                            <a href="{{ post.url }}"><img class="img100" alt="" src="{{ post.featured_image }}" data-img-size="(W)800px X (H)507px"></a>
+                        </div>
+                        <!-- end blog image -->
+                        <!-- blog details -->
+                        <div class="post-details bg-gray tz-background-color">                            
+                            <a href="{{ post.url }}" class="tz-text text-dark-gray blog-post-title text-medium font-weight-600 margin-five-bottom display-inline-block md-margin-five-bottom">{{ post.title }}</a>
+                            <div class="text-medium tz-text">
+                                {{ post.excerpt }}
+                            </div>
+                        </div>
+                        <!-- end blog details -->
+                    </div>
+                </div>
+                <!-- end blog item -->
+            {% endfor %}
+            {% if paginator.total_pages > 1 %}
+                <div class="pagination">
+                    {% if paginator.previous_page %}
+                        <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="previous btn">&larr; Próximos</a>
+                    {% endif %}
+
+                    <span class="page_number ">{{ paginator.page }} of {{ paginator.total_pages }}</span>
+
+                    {% if paginator.next_page %}
+                        <a href="{{ site.baseurl }}{{ paginator.next_page_path }}" class="next btn">Anteriores &rarr;</a>
+                    {% endif %}
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</section>

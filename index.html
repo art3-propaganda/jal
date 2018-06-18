@@ -1,89 +1,82 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-	<title>Jal Autopeças</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="images/favicon.ico"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-<!--===============================================================================================-->
-</head>
-<body>
-	
-	
-	<div class="bg0 size1 flex-w flex-col-c-sb p-l-15 p-r-15 p-t-55 p-b-35 respon1">
-		<span></span>
-		<div class="flex-col-c p-t-50 p-b-50">
-			<img src="images/logo.png" width="250px;" />
-			<br><br>
-			<h3 class="l1-txt1 txt-center p-b-10">
-				Em breve
-			</h3>
+---
+title: Home
+---
 
-			<p class="txt-center l1-txt2 p-b-60">
-				Nosso Site está em Construção!
-			</p>
+{% include slider.html %}
+{% include dicas.html %}
 
-		</div>
+<section class="cover-background tz-builder-bg-image padding-130px-tb xs-padding-60px-tb border-none" id="subscribe-section1" data-img-size="(W)1920px X (H)499px" style="background:linear-gradient(rgba(40,40,40,0.7), rgba(40,40,40,0.7)), url('images/bg-image/agency-subscribe-bg.jpg') ">
+    <div class="container position-relative">
+        <div class="row center-col">
+            <div class="col-md-12 text-center">
+                <h3 class="text-white title-extra-large alt-font margin-two-bottom xs-title-extra-large-3 xs-margin-eleven-bottom tz-text">Inscreva-se e receba nossas novidades!</h3>                           
+                <div class="display-inline-block subscribe-style1 xs-width-100">
+                    <form action="javascript:void(0)" method="post" class="position-relative">
+                        <input class="big-input text-transform-none xs-width-100 xs-no-margin" data-email="required" placeholder="Seu E-mail" id="email" name="email" type="text">
+                        <a class="tz_submit title-small text-dark-gray" href="#"><i class="fa fa-long-arrow-right tz-icon-color"></i></a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end subscribe section -->
 
-		<span class="s1-txt3 txt-center">
-			2018 Jal Autopeças. Criado por: Art3 Propaganda.
-		</span>
-		
-	</div>
+<section class="padding-110px-tb bg-gray builder-bg contact-form-style6 border-none xs-padding-60px-tb" id="contact-section12">
+    <div class="container">
+        <div class="row">
+            <!-- section title -->
+            <div class="col-md-6 col-sm-12 col-xs-12 center-col text-center">
+                <h2 class="section-title-large sm-section-title-medium xs-section-title-large text-dark-gray font-weight-600 alt-font margin-six-bottom xs-margin-fifteen-bottom tz-text">Contato</h2>
+            </div>
+            <!-- end section title -->
+            <!-- contact form  -->
+            <div class="col-md-6 col-sm-12 col-xs-12 text-center">
+                <form action="javascript:void(0)" method="post" class="width-100">
+                    <input type="text" name="name" id="name" data-email="required" placeholder="*Nome" class="medium-input border-radius-4">                                
+                    <input type="text" name="phone" id="phone" data-email="required" placeholder="*Telefone" class="medium-input border-radius-4">    
+                    <input type="text" name="email" id="email" data-email="required" placeholder="*E-mail" class="medium-input border-radius-4">   
+                    <select name="cidadelist">
+                      <option value="Itabuna">Itabuna</option>
+                      <option value="Texeira de Freitas">Texeira de Freitas</option>
+                      <option value="Ilhéus">Ilhéus</option>
+                      <option value="Eunápolis">Eunápolis</option>
+                      <option value="Itapetinga">Itapetinga</option>
+                    </select>                           
+                    <textarea name="comment" rows="4" id="comment" placeholder="Mensagem" class="medium-input border-radius-4"></textarea>                                
+                    <button type="submit" class="tz_submit btn btn-large propClone bg-blue btn-3d text-white tz-text">Enviar</button>                                
+                </form>
+            </div>
+            <!-- end contact form  -->
+            <div class="col-md-6 col-sm-12 col-xs-12">
 
-	
-	
-
-<!--===============================================================================================-->	
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/countdowntime/moment.min.js"></script>
-	<script src="vendor/countdowntime/moment-timezone.min.js"></script>
-	<script src="vendor/countdowntime/moment-timezone-with-data.min.js"></script>
-	<script src="vendor/countdowntime/countdowntime.js"></script>
-	<script>
-		$('.cd100').countdown100({
-			// Set Endtime here
-			// Endtime must be > current time
-			endtimeYear: 0,
-			endtimeMonth: 0,
-			endtimeDate: 35,
-			endtimeHours: 18,
-			endtimeMinutes: 0,
-			endtimeSeconds: 0,
-			timeZone: "" 
-			// ex:  timeZone: "America/New_York", can be empty
-			// go to " http://momentjs.com/timezone/ " to get timezone
-		});
-	</script>
-<!--===============================================================================================-->
-	<script src="vendor/tilt/tilt.jquery.min.js"></script>
-	<script >
-		$('.js-tilt').tilt({
-			scale: 1.1
-		})
-	</script>
-<!--===============================================================================================-->
-	<script src="js/main.js"></script>
-
-</body>
-</html>
+                <div class="center-col text-right">
+                    <h6>Eunápolis</h6><br>
+                    <span><a href="tel:+557332818900"><i class="fa fa-phone tz-icon-color"></i>  73 3281 8900</a></span><br>
+                    <span><a href="https://maps.google.com/?q=Avenida+Luis+Eduardo+Magalhaes,+688&entry=gmail&source=g"><i class="fa fa-map-marker tz-icon-color"></i>  Avenida Luis Eduardo Magalhaes, 688, Moisés Reis</a></span><br><br>                               
+                </div>
+                
+                <div class="center-col text-right">
+                    <h6>Itabuna</h6><br>
+                    <span><a href="tel:+55732142450"><i class="fa fa-phone tz-icon-color"></i>  73 3214 2450</a></span><br>
+                    <span><a href="https://maps.google.com/?q=Itabuna+Avenida+Jos%C3%A9+Soares+Pinheiro,+298,+Centro&entry=gmail&source=g"><i class="fa fa-map-marker tz-icon-color"></i>  Avenida José Soares Pinheiro, 298, Centro </a></span><br><br>
+                </div>
+                <div class="center-col text-right">
+                    <h6>Ilhéus</h6><br>
+                    <span><a href="tel:+557332318783"><i class="fa fa-phone tz-icon-color"></i>  73 3231 8783</a></span><br>
+                    <span><a href="https://maps.google.com/?q=Ilh%C3%A9us+Avenida+Itabuna,+1012,+Centro&entry=gmail&source=g"><i class="fa fa-map-marker tz-icon-color"></i>  Avenida Itabuna, 1012, Centro</a></span><br><br>
+                </div>
+                <div class="center-col text-right">
+                    <h6>Itapetinga</h6><br>
+                    <span><a href="tel:+557732617553"><i class="fa fa-phone tz-icon-color"></i>  77 3261 7553</a></span><br>
+                    <span><a href="https://maps.google.com/?q=Itapetinga+Avenida+Itabuna,+596,+Sao+Francisco&entry=gmail&source=g"><i class="fa fa-map-marker tz-icon-color"></i>  Avenida Itabuna, 596, Sao Francisco de Assis</a></span><br><br>
+                </div>  
+                <div class="center-col text-right">
+                    <h6>Teixeira de Freitas</h6><br>
+                    <span><a href="tel:+557332925284"><i class="fa fa-phone tz-icon-color"></i>  73 3292 5284</a></span><br>
+                    <span><a href=""><i class="fa fa-map-marker tz-icon-color"></i>  Praça 7 de Setembro, 222, Monte Castelo</a></span><br><br>
+                </div>             
+            </div>
+        </div>
+    </div>
+</section>

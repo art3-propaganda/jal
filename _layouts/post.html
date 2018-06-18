@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+ <section class="content-style5 bg-light-gray padding-110px-tb xs-padding-60px-tb builder-bg border-none" id="content-section5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 margin-twelve-bottom xs-margin-nineteen-bottom">
+                <img class="img-responsive" src="{{ page.featured_image }}" data-img-size="(W)1267px X (H)751px" alt="{{ page.title }}">
+            </div>
+            <!-- section title -->
+            <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                <h2 class="section-title-large sm-section-title-medium xs-section-title-large font-weight-600 text-dark-gray alt-font margin-three-bottom xs-margin-fifteen-bottom tz-text">{{ page.title }}</h2>
+                <p>{% include post-heading.html post=page post_page=true %}</p>                
+            </div>
+            <!-- end section title -->
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="text-medium sm-text-medium width-60 margin-lr-auto md-width-70 sm-width-100 tz-text margin-thirteen-bottom xs-margin-nineteen-bottom">
+                    {{ content }}
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+</section>

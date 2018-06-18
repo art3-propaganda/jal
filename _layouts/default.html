@@ -1,0 +1,192 @@
+<!doctype html>
+<html class="no-js" lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+        <!-- title -->
+        {% seo %}
+		{% feed_meta %}
+        <!-- favicon -->
+        <link rel="shortcut icon" href="{{ site.baseurl }}/images/icon/favicon.ico">
+        <!-- animation -->
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/animate.css" />
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap.min.css" />
+        <!-- font-awesome icon -->
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/font-awesome.min.css" />
+        <!-- themify-icons -->
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/themify-icons.css" />
+        <!-- owl carousel -->
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/owl.transitions.css" />
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/owl.carousel.css" /> 
+        
+        <!-- magnific popup -->
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/magnific-popup.css" /> 
+        <!-- base -->
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/base.css" /> 
+        <!-- elements -->
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/elements.css" />
+        <!-- responsive -->
+        <link rel="stylesheet" href="{{ site.baseurl }}/css/responsive.css" />
+        <!--[if IE 9]>
+        <link rel="stylesheet" type="text/css" href="css/ie.css" />
+        <![endif]-->
+        <!--[if IE]>
+            <script src="js/html5shiv.min.js"></script>
+        <![endif]-->
+        {% if jekyll.environment == 'production' and site.google_analytics_key != '' %}
+			<script>
+				window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+				ga('create', '{{ site.google_analytics_key }}', 'auto');
+				ga('send', 'pageview');
+			</script>
+			<script async src='https://www.google-analytics.com/analytics.js'></script>
+		{% endif %}
+
+        
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+        
+    <style>
+            p{
+                text-align: justify;
+            }
+        </style>
+    </head>
+    <body>
+        
+
+        <div id="page" class="page">
+
+            <header class="header-style5" id="header-section11">
+                <!-- nav -->
+                <nav class="navbar bg-white tz-header-bg no-margin alt-font shrink-header light-header">
+                    <div class="container navigation-menu">
+                        <div class="row">
+                            <!-- logo -->
+                            <div class="col-md-3 col-sm-4 col-xs-6">
+                                <a href="{{site.baseurl }}/" class="inner-link"><img alt="" src="{{ site.baseurl }}/images/logo.png" data-img-size="(W)163px X (H)39px"></a>
+                            </div>
+                            <!-- logo -->
+                            <div class="col-md-9 col-sm-8 col-xs-6 position-inherit xs-no-padding-left">
+                                <button data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <!-- social elements -->
+                                <div class="social float-right pull-right">
+                                    <a href="https://www.facebook.com/Jalautopecas/"><i class="fa fa-facebook tz-icon-color"></i></a>
+                                    <a href="https://www.instagram.com/jalautopecas/"><i class="fa fa-instagram tz-icon-color"></i></a>
+                                </div>
+                                <!-- end social elements -->
+                                <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse pull-right">
+                                    <ul class="nav navbar-nav font-weight-500">
+                                        <li><a class="inner-link" href="{{site.baseurl }}/"><b>HOME</b></a></li>
+                                        <li><a class="inner-link" href="{{site.baseurl }}/sobre/"><b>QUEM SOMOS</b></a></li>
+                                        <li><a class="inner-link" href="{{site.baseurl }}/dicas/"><b>DICAS DA JAL</b></a></li>
+                                        <li><a class="inner-link" href="{{site.baseurl }}/contato"><b>CONTATO</b></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav> 
+                <!-- end nav -->
+            </header>
+
+            {{ content }}            
+
+            <footer id="footer-section17" class="bg-dark-gray padding-60px-tb xs-padding-40px-tb builder-bg">
+                <div class="container">
+                    <div class="row">
+                        <!-- logo -->
+                        <div class="col-md-3 col-sm-12 col-xs-12 sm-text-center sm-margin-five-bottom ">
+                            <!-- logo -->
+                            <a class="margin-eight-bottom display-inline-block inner-link" href="#home"><img src="{{site.baseurl }}/images/logo.png" width="163px" height="40px" alt=""></a>
+                            <!-- end logo -->   
+                        </div>
+                        <!-- end logo -->
+                        <!-- links -->
+                        <div class="col-md-2 col-sm-3 col-xs-12 xs-margin-nine-bottom xs-text-center">
+                            <ul class="links">
+                                
+                            </ul>
+                        </div>
+                        <div class="col-md-2 col-sm-3 col-xs-12 xs-margin-nine-bottom xs-text-center">
+                            <ul class="links">
+                                <li class="text-medium margin-seven-bottom font-weight-600 text-white tz-text xs-margin-one-half-bottom">Menu</li>
+                                <li><a class="tz-text text-medium-gray" href="{{site.baseurl }}/sobre/">Quem Somos</a></li>
+                                <li><a class="tz-text text-medium-gray" href="{{site.baseurl }}/dicas/">Dicas da Jal</a></li>
+                                <li><a class="tz-text text-medium-gray" href="{{site.baseurl }}/contato/">Contato</a></li>
+                                <li><a class="tz-text text-medium-gray" href="{{site.baseurl }}/trabalhe/">Trabalhe Conosco</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-2 col-sm-3 col-xs-12 xs-margin-nine-bottom xs-text-center">
+                            <ul class="links">
+                                <li class="text-medium margin-seven-bottom font-weight-600 text-white tz-text xs-margin-one-half-bottom">Siga nossas redes</li>
+                                <li><a class="tz-text text-medium-gray" href="https://www.facebook.com/Jalautopecas/">Facebook</a></li>
+                                <li><a class="tz-text text-medium-gray" href="https://www.instagram.com/jalautopecas/">Instagram</a></li>
+                            </ul>
+                        </div>
+                        <!-- end links -->
+                        <!-- newsletter box -->
+                        <div class="col-md-3 col-sm-3 col-xs-12 xs-text-center sm-margin-five-bottom xs-margin-nine-bottom">
+                            <div class="text-medium margin-seven-bottom font-weight-600 text-white tz-text xs-margin-one-half-bottom">Newsletter</div>
+                            <div class="tz-text margin-six-bottom"><p class="no-margin-bottom">Fique por dentro nas novidades e promoções</p></div>
+                            <div class="display-block position-relative subscribe-style4 margin-ten-top">
+                                <form action="javascript:void(0)" method="post" class="position-relative">
+                                    <input class="medium-input text-transform-none xs-width-100 xs-no-margin" data-email="required" placeholder="Seu e-mail" id="email" name="email" type="text">
+                                    <a class="tz_submit text-large" href="#"><i class="fa fa-envelope-o text-medium-gray tz-icon-color"></i></a>                                                   
+                                </form>
+                            </div>
+                        </div>
+                        <!-- end newsletter box -->
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                            <div class="padding-six-top margin-six-top xs-padding-six-top border-top-light tz-border">
+                               <p class="tz-text no-margin-bottom">
+                               	&copy; {{ site.time | date: "%Y" }} {{ site.title }}. Todos os Direitos reservados.
+                               </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div><!-- /#page -->
+
+
+        <!-- javascript libraries -->
+        <script type="text/javascript" src="{{ site.baseurl }}/js/jquery.min.js"></script>
+        <script type="text/javascript" src="{{ site.baseurl }}/js/jquery.appear.js"></script>
+        <script type="text/javascript" src="{{ site.baseurl }}/js/smooth-scroll.js"></script>
+        <script type="text/javascript" src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
+        <!-- wow animation -->
+        <script type="text/javascript" src="{{ site.baseurl }}/js/wow.min.js"></script>
+        <!-- owl carousel -->
+        <script type="text/javascript" src="{{ site.baseurl }}/js/owl.carousel.min.js"></script>        
+        <!-- images loaded -->
+        <script type="text/javascript" src="{{ site.baseurl }}/js/imagesloaded.pkgd.min.js"></script>
+        <!-- isotope -->
+        <script type="text/javascript" src="{{ site.baseurl }}/js/jquery.isotope.min.js"></script> 
+        <!-- magnific popup -->
+        <script type="text/javascript" src="{{ site.baseurl }}/js/jquery.magnific-popup.min.js"></script>
+        <!-- navigation -->
+        <script type="text/javascript" src="{{ site.baseurl }}/js/jquery.nav.js"></script>
+        <!-- equalize -->
+        <script type="text/javascript" src="{{ site.baseurl }}/js/equalize.min.js"></script>
+        <!-- fit videos -->
+        <script type="text/javascript" src="{{ site.baseurl }}/js/jquery.fitvids.js"></script>
+        <!-- number counter -->
+        <script type="text/javascript" src="{{ site.baseurl }}/js/jquery.countTo.js"></script>
+        <!-- time counter  -->
+        <script type="text/javascript" src="{{ site.baseurl }}/js/counter.js"></script>
+        <!-- twitter Fetcher  -->
+        <script type="text/javascript" src="{{ site.baseurl }}/js/twitterFetcher_min.js"></script>
+        <!-- main -->
+        <script type="text/javascript" src="{{ site.baseurl }}/js/main.js"></script>
+    </body>
+</html>
+        
