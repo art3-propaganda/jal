@@ -2,7 +2,7 @@
 title: Faróis Auxiliares
 categories: Blog
 date: '2018-06-18 09:05am'
-featured_image: /uploads/farol-de-neblina.webp
+featured_image: /uploads/farol-de-neblina.png
 link: '#'
 ---
 Com a popularização dos faróis de neblina, muitos motoristas optam por usá-los combinados com as luzes de posição. O carro ganha um ar intimidador, e o fato de ter potência semelhante à do farol baixo leva muita gente a crer que eles servem como substitutos. Mas não é bem assim.
