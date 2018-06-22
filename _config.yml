@@ -91,6 +91,6 @@ _options:
 
 # HTML Compression
 # - http://jch.penibelst.de/
-compress_html:
-  comments                : ["<!-- ", " -->"]
+#compress_html:
+#  comments                : ["<!-- ", " -->"]
   
