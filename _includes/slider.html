@@ -1,31 +1,61 @@
-<div id="slider-section1">                
-    <section id="home1" class="no-padding slider-style1 border-none">
+<div id="slider-section2">          
+    <section id="home2" class="no-padding slider-style2 border-none">
         <style>
                 .owl-carousel .owl-wrapper-outer{
                     max-height: 500px;
                 }
+                
+                @media (min-width: 760px){
+                    .margin-60-top{margin-top: -60% !important}
+                }
+                @media (max-width: 759px){
+                    .margin-60-top{margin-top: 0% !important}
+                }
         </style>
-        <div class="owl-slider-full owl-carousel light-pagination">
+        <div class="owl-slider-full owl-carousel owl-theme light-pagination xs-no-owl-buttons">
             <!-- slider item -->
-            {% for post in site.categories.Slide limit:3 %}
-                <a href="{{ post.link }}">
-                    <div class="item owl-bg-img tz-builder-bg-image cover-background" id="tz-bg-1" data-img-size="(W)1920px X (H)500px" style="background: url('{{ post.featured_image }}')">
-                        <div class="container one-sixth-screen xs-one-second-screen position-relative">
-                            <div class="col-md-12 col-sm-12 col-xs-12 slider-typography text-left sm-position-inherit">
-                                <div class="slider-text-middle-main">
-                                    <div class="slider-text-top"> 
-                                        <div class="col-md-7 col-sm-10 col-xs-12 no-padding alt-font slider-content sm-no-margin-top">
-                                            <div class="title-extra-large-6 line-height-75 font-weight-600 text-light-green slider-title margin-seven-bottom tz-text" id="tz-slider-text1"><br></div>
-                                            <div class="text-light-gray text-extra-large text-white main-font font-weight-500 slider-text margin-ten-bottom tz-text width-80 xs-width-100" id="tz-slider-text2"><br></div>
-                                        </div>
-                                    </div>
-                                </div>
+            <div class="item owl-bg-img tz-builder-bg-image cover-background" id="tz-bg-4" data-img-size="(W)1920px X (H)994px" style="background: url('images/uploads/capa-banner-site.png')">
+                <div class="container one-sixth-screen xs-one-second-screen position-relative">
+                    <div class="col-md-7 col-sm-10 col-xs-12 margin-lr-auto slider-typography text-center">
+                        <div class="slider-text-middle-main">
+                            <div class="slider-text-middle">
+                                <div class="title-extra-large-9 font-weight-600 text-golden-yellow margin-60-top alt-font slider-title tz-text" id="tz-slider-text13"><img class="xs-center-col" src="images/uploads/capa-banner-layer.png"></div>
+                                <div class="text-extra-large text-light-gray font-weight-400 margin-twelve-bottom xs-margin-twenty-bottom slider-text xs-title-small tz-text width-85 xs-width-95 margin-lr-auto" id="tz-slider-text14"> <p> </p> </div>
                             </div>
                         </div>
                     </div>
-                </a>
-            {% endfor %}
-            <!-- end slider item -->                        
+                </div>
+            </div>
+            <!-- end slider item -->
+            <!-- slider item -->
+            <div class="item owl-bg-img tz-builder-bg-image cover-background" id="tz-bg-4" data-img-size="(W)1920px X (H)994px" style="background: url('images/uploads/dica-banner.png')">
+                <div class="container one-sixth-screen xs-one-second-screen position-relative">
+                    <div class="col-md-7 col-sm-10 col-xs-12 margin-lr-auto slider-typography text-center">
+                        <div class="slider-text-middle-main">
+                            <div class="slider-text-middle">
+                                <div class="title-extra-large-9 font-weight-600 text-golden-yellow margin-60-top alt-font slider-title tz-text" id="tz-slider-text13"><img class="xs-center-col" src="images/uploads/dica-banner-layer.png"></div>
+                                <div class="text-extra-large text-light-gray font-weight-400 margin-twelve-bottom xs-margin-twenty-bottom slider-text xs-title-small tz-text width-85 xs-width-95 margin-lr-auto" id="tz-slider-text14"> <p> </p> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end slider item -->
+            <!-- slider item -->
+            <div class="item owl-bg-img tz-builder-bg-image cover-background" id="tz-bg-4" data-img-size="(W)1920px X (H)994px" style="background: url('images/uploads/contatos-banner-bg.png')">
+                <div class="container one-sixth-screen xs-one-second-screen position-relative">
+                    <div class="col-md-7 col-sm-10 col-xs-12 margin-lr-auto slider-typography text-center">
+                        <div class="slider-text-middle-main">
+                            <div class="slider-text-middle">
+                                <div class="title-extra-large-9 font-weight-600 text-golden-yellow margin-60-top alt-font slider-title tz-text" id="tz-slider-text13"><img class="xs-center-col" src="images/uploads/contatos-banner-layer-1.png"></div>
+                                <div class="text-extra-large text-light-gray font-weight-400 margin-twelve-bottom xs-margin-twenty-bottom slider-text xs-title-small tz-text width-85 xs-width-95 margin-lr-auto" id="tz-slider-text14"> <p> </p> </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end slider item -->        
         </div>
     </section>                
 </div>
+
