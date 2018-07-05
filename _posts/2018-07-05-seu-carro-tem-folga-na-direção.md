@@ -19,4 +19,4 @@ Feito o diagnóstico de que existe folga, falta de fluído ou ressecamento das m
 
 Seguindo esses passos você manterá seu carro como novo por muito mais tempo, além de ter um carro confiável e seguro de guiar, por estar sempre em ordem conseguirá um bom valor na hora de revender.
 
-Se inscreva na nossa [newsletter](https://jalautopecas.com/#subscribe-section1) e siga nossas redes para ficar por dentro das nossas dicas.
+Se inscreva na nossa** **[**newsletter**](https://jalautopecas.com/#subscribe-section1)** **e siga nossas redes para ficar por dentro das nossas dicas.
