@@ -2455,6 +2455,7 @@
     .header-style8 .header-banner .banner-text { font-size: 14px;}
 
     /* slider */
+    background: url('/uploads/jal-m.png');
     .slider-style1 .slider-title { font-size: 30px !important; line-height: 35px !important;}
     .slider-style1 .slider-text { line-height: 20px;}
     .slider-style2 .slider-title { font-size: 35px !important; line-height:38px !important;}
@@ -2499,6 +2500,7 @@
 
 @media (max-width: 419px) {
     /* header */
+    background: url('/uploads/jal-m.png');
     .header-style5 .social a { margin: 0 4px;}
     .header-style5 .social { margin-right: 8px; }
     .header-style13 .social a{margin-left: 0px;}
@@ -2509,12 +2511,14 @@
 
 @media (max-width: 380px) {
     /* header */
+    background: url('/uploads/jal-m.png');
     .header-style13 .social a{margin:0 0 0 6px; }
     .header-style14 .social a, .header-style15 .social a{margin:0 0 0 6px; }
 
 }
 @media screen and (max-width: 320px) {
      /*  navigation  */
+    background: url('/uploads/jal-m.png');
     .shrink-nav .navbar-collapse { max-height: 420px; }
 }
 
