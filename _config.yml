@@ -10,7 +10,7 @@ disqus_shortname:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /images/logo.png
-description: A melhor autopeças da região.
+description: A melhor autopeças da região. Desenvolvido por Phillipe Souza (https://phillipesouza.com.br)
 author:
   name:
   email:
