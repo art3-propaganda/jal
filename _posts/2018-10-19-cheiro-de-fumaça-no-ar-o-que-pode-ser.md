@@ -2,6 +2,7 @@
 title: 'Cheiro de fumaça no ar, o que pode ser?'
 categories: Blog
 date: '2018-10-19 09:57am'
+featured_image: /uploads/jal-fumaça.png
 link: Cheiro-de-fumaca-no-ar-o-que-pode-ser
 ---
 Com certeza, alguém já se deparou com um veículo parado no acostamento com o capô aberto e saindo fumaça. Esse é o tipo de imprevisto que qualquer um pode passar. Mas por que isso acontece? Onde há fumaça, há problemas. E alguns destes podem ser facilmente detectados:
